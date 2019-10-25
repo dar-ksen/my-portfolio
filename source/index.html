@@ -8,11 +8,123 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header></header>
+  <header class="header">
+    <div class="header__wrap">
+      <button class="header__toggle" type="button">Открыть/закрыть меню</button>
+      <nav class="main-nav js-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Обо мне</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Навыки</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Портфолио</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Образование</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
-    <h1>Здесь будет город сад</h1>
+    <section class="about-me">
+      <h1 class="visually-hidden">Портфолио Владимира Сухова</h1>
+      <div class="about-me__wrap">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/avatar-desktop@1x.webp 1x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/avatar-tablet@1x.webp 1x">
+          <source type="image/webp" srcset="img/avatar-mobile@1x.webp 1x">
+
+          <source media="(min-width: 768px)" srcset="img/avatar-tablet@1x.jpg">
+          <img class="week-goods__img" src="img/avatar-mobile@1x.jpg" alt="Аватар">
+        </picture>
+
+        <div class="about-me__info-wrap">
+          <h2 class="about-me__name">Владимир Сухов</h2>
+          <p class="about-me__age">25 лет</p>
+          <p class="about-me__location">Пенза, Россия</p>
+          <p class="about-me__profession">Frontend разработчик</p>
+        </div>
+
+        <div class="about-me__links-wrap">
+          <a class="about-me__link" href="https://github.com/dar-ksen">github</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="skills__wrap">
+        <h2 class="title skills__title">Навыки</h2>
+        <ul class="skills__list">
+          <li class="skills__item">HTML 5 + CSS 3 + JS</li>
+          <li class="skills__item">Методалогия верстки: БЭМ</li>
+          <li class="skills__item">Сборщик: Gulp</li>
+          <li class="skills__item">Кросс-браузерная верстка (включая IE11)</li>
+          <li class="skills__item">Прогрессивное улучшение</li>
+          <li class="skills__item">LДоступность</li>
+          <li class="skills__item">LJS и CSS анимация</li>
+          <li class="skills__item">LКонтроль версий: git</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="portfolio__wrap">
+        <h2 class="title portfolio__title"></h2>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <!-- Поискать вариант заполнения -->
+            <a class="portfolio__link" href="#">
+              <img class="portfolio__img" src="#" alt="первый сайт">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="education">
+      <h2 class="title">Образование</h2>
+      <p class="education__desc">Сейчас я учусь в HTML Академии.</p>
+      <p class="education__desc">Профессия Frontend-разработчик</p>
+      <p class="education__desc"><a class="education__link" href="https://htmlacademy.ru/profile/dar_ksen">Ссылка</a>на студенческий профайл</p>
+      <h3 class="education__sub-title">Полученные сертификаты:</h3>
+      <ul class="certificates">
+
+        <li class="certificates__item">
+          <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/109/955135.pdf?1572032761">
+            <img class="certificates__img" src="img/certificate1@1x.jpg" alt="Профессиональный HTML и CSS, уровень 1">
+            <h4 class="certificates__title">Профессиональный HTML и CSS, уровень 1, поток 25</h4>
+          </a>
+        </li>
+
+        <li class="certificates__item">
+          <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/115/955135.pdf?1567272502">
+            <img class="certificates__img" src="img/certificate2@1x.jpg" alt="Профессиональный HTML и CSS, уровень 2">
+            <h4 class="certificates__title">Профессиональный HTML и CSS, уровень 2, поток 17</h4>
+          </a>
+        </li>
+
+        <li class="certificates__item">
+          <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/121/955135.pdf?1571212644">
+            <img class="certificates__img" src="img/certificate3@1x.jpg" alt="Профессиональный JavaScript, уровень 1">
+            <h4 class="certificates__title">Профессиональный JavaScript, уровень 1, поток 18</h4>
+          </a>
+        </li>
+
+        <li class="certificates__item">
+          <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/profession/5/955135.pdf?1571213839">
+            <img class="certificates__img" src="img/certificate4@1x.jpg" alt="Профессия Фронтенд разработчик">
+            <h4 class="certificates__title">Профессия "Фронтенд разработчик"</h4>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
   </main>
-  <footer></footer>
+  <footer class="contacts">
+    <div class="contacts__wrap">
+      <h2 class="heading">Контакты</h2>
+      <div class="contacts__link">
+
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
