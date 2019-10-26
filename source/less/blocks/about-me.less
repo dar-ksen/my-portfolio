@@ -21,6 +21,8 @@
 
 .about-me__img {
   margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
 }
 
 .about-me__info-wrap {
@@ -48,8 +50,23 @@
 
 .about-me__links-wrap {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
   @media @tablet {
     align-self: flex-start;
     margin-left: auto;
+  }
+}
+
+.about-me__link {
+  transition: 0.2s;
+  &:hover .about-me__link-img,
+  &:focus .about-me__link-img {
+    fill: #10856e;
+  }
+
+  &:active .about-me__link-img {
+    fill: #1d1d1d;
   }
 }

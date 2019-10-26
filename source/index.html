@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="header">
     <div class="header__wrap">
       <div class="header__top-wrap">
@@ -36,8 +41,8 @@
       <h1 class="visually-hidden">Портфолио Владимира Сухова</h1>
       <div class="about-me__wrap">
         <picture>
-          <!-- <source media="(min-width: 768px)" srcset="img/avatar-tablet@1x.jpg"> -->
-          <img class="about-me__img" src="http://placehold.it/280x280" alt="Аватар">
+          <source type="image/webp" srcset="img/avatar.webp">
+          <img class="about-me__img" src="img/avatar.jpg" alt="Аватар">
         </picture>
 
         <div class="about-me__info-wrap">
@@ -48,7 +53,11 @@
         </div>
 
         <div class="about-me__links-wrap">
-          <a class="about-me__link" href="https://github.com/dar-ksen">github</a>
+          <a class="about-me__link" href="https://github.com/dar-ksen">
+            <svg class="about-me__link-img" width="50" height="50">
+              <use xlink:href="#github"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -73,38 +82,73 @@
       <div class="portfolio__wrap">
         <h2 class="title">Портфолио</h2>
         <ul class="cards">
+
           <li class="cards__item">
-            <img class="cards__img" src="img/sait_1.jpg" width="280" alt="Адаптивный сайт мишка">
+            <picture>
+              <source type="image/webp" srcset="img/sait_1.webp">
+              <img class="cards__img" src="img/sait_1.jpg" alt="Адаптивный сайт мишка">
+            </picture>
             <div class="cards__active">
-              <a class="cards__link" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
-              <a class="cards__link" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
-              <a class="cards__link" href="#">Описание</a>
+              <a class="cards__link cards__link--demo" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
+              <a class="cards__link cards__link--github" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
+              <a class="cards__link cards__link--info" href="#">Описание</a>
             </div>
           </li>
+
           <li class="cards__item">
-            <img class="cards__img" src="img/sait_1.jpg" width="280" alt="Адаптивный сайт мишка">
+            <img class="cards__img" src="img/sait_2.jpg" width="280" height="230" alt="Адаптивный сайт мишка">
             <div class="cards__active">
-              <a class="cards__link" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
-              <a class="cards__link" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
-              <a class="cards__link" href="#">Описание</a>
+              <a class="cards__link cards__link--demo" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
+              <a class="cards__link cards__link--github" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
+              <a class="cards__link cards__link--info" href="#">Описание</a>
             </div>
           </li>
+
           <li class="cards__item">
-            <img class="cards__img" src="img/sait_1.jpg" width="280" alt="Адаптивный сайт мишка">
+            <img class="cards__img" src="img/sait_3.jpg" width="280" height="230" alt="Адаптивный сайт мишка">
             <div class="cards__active">
-              <a class="cards__link" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
-              <a class="cards__link" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
-              <a class="cards__link" href="#">Описание</a>
+              <a class="cards__link cards__link--demo" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
+              <a class="cards__link cards__link--github" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
+              <a class="cards__link cards__link--info" href="#">Описание</a>
             </div>
           </li>
+
           <li class="cards__item">
-            <img class="cards__img" src="img/sait_1.jpg" width="280" alt="Адаптивный сайт мишка">
+            <img class="cards__img" src="img/sait_4.png" width="280" height="230" alt="Адаптивный сайт мишка">
             <div class="cards__active">
-              <a class="cards__link" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
-              <a class="cards__link" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
-              <a class="cards__link" href="#">Описание</a>
+              <a class="cards__link cards__link--demo" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
+              <a class="cards__link cards__link--github" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
+              <a class="cards__link cards__link--info" href="#">Описание</a>
             </div>
           </li>
+
+          <li class="cards__item">
+            <img class="cards__img" src="img/sait_5.jpg" width="280" height="230" alt="Адаптивный сайт мишка">
+            <div class="cards__active">
+              <a class="cards__link cards__link--demo" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
+              <a class="cards__link cards__link--github" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
+              <a class="cards__link cards__link--info" href="#">Описание</a>
+            </div>
+          </li>
+
+          <li class="cards__item">
+            <img class="cards__img" src="img/sait_6.jpg" width="280" height="230" alt="Адаптивный сайт мишка">
+            <div class="cards__active">
+              <a class="cards__link cards__link--demo" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
+              <a class="cards__link cards__link--github" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
+              <a class="cards__link cards__link--info" href="#">Описание</a>
+            </div>
+          </li>
+
+          <li class="cards__item">
+            <img class="cards__img" src="img/sait_7.jpg" width="280" height="230" alt="Адаптивный сайт мишка">
+            <div class="cards__active">
+              <a class="cards__link cards__link--demo" href="https://dar-ksen.github.io/mishka/" target="_blank">Демо</a>
+              <a class="cards__link cards__link--github" href="https://github.com/dar-ksen/mishka" target="_blank">Код</a>
+              <a class="cards__link cards__link--info" href="#">Описание</a>
+            </div>
+          </li>
+
 
         </ul>
       </div>
@@ -120,7 +164,7 @@
         <ul class="certificates">
 
           <li class="certificates__item">
-            <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/109/955135.pdf?1572032761">
+            <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/109/955135.pdf?1572032761" target="_blank">
               <picture>
                 <source type="image/webp" srcset="img/certificate1@1x.webp">
                 <img class="certificates__img" src="img/certificate1@1x.jpg" alt="Профессиональный HTML и CSS, уровень 1">
@@ -130,7 +174,7 @@
           </li>
 
           <li class="certificates__item">
-            <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/115/955135.pdf?1567272502">
+            <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/115/955135.pdf?1567272502" target="_blank">
               <picture>
                 <source type="image/webp" srcset="img/certificate2@1x.webp">
                 <img class="certificates__img" src="img/certificate2@1x.jpg" alt="Профессиональный HTML и CSS, уровень 2">
@@ -140,7 +184,7 @@
           </li>
 
           <li class="certificates__item">
-            <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/121/955135.pdf?1571212644">
+            <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/121/955135.pdf?1571212644" target="_blank">
               <picture>
                 <source type="image/webp" srcset="img/certificate3@1x.webp">
                 <img class="certificates__img" src="img/certificate3@1x.jpg" alt="Профессиональный JavaScript, уровень 1">
@@ -150,7 +194,7 @@
           </li>
 
           <li class="certificates__item">
-            <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/profession/5/955135.pdf?1571213839">
+            <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/profession/5/955135.pdf?1571213839" target="_blank">
               <picture>
                 <source type="image/webp" srcset="img/certificate4@1x.webp">
                 <img class="certificates__img" src="img/certificate4@1x.jpg" alt="Профессия Фронтенд разработчик">
@@ -166,10 +210,33 @@
   </main>
   <footer class="contacts">
     <div class="contacts__wrap">
-      <h2 class="heading">Контакты</h2>
-      <div class="contacts__link">
+      <h2 class="title">Контакты</h2>
+      <div class="social">
 
+        <a class="social__link social__link--telegram" href="https://tglink.me/dar_ksen">
+          <span class="visually-hidden">Я в телеграмме</span>
+          <svg class="social__img" width="50" height="50">
+              <use xlink:href="#telegram"></use>
+            </svg>
+        </a>
+
+        <a class="social__link social__link--vk" href="https://vk.com/dar_ksen">
+          <span class="visually-hidden">Я в VK</span>
+          <svg class="social__img" width="50" height="50">
+              <use xlink:href="#vk"></use>
+            </svg>
+        </a>
+
+        <a class="social__link social__link--twitter" href="https://twitter.com/dar_ksen">
+          <span class="visually-hidden">Я в твитере</span>
+          <svg class="social__img" width="50" height="50">
+              <use xlink:href="#twitter"></use>
+            </svg>
+        </a>
       </div>
+
+      <a class="contact__link" href="mailto:ksen.vl.set@gmail.com">ksen.vl.set@gmail.com</a>
+
     </div>
   </footer>
 
