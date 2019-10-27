@@ -12,9 +12,22 @@
 }
 
 .skills__list {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   font-size: 18px;
   font-weight: 700;
+}
+
+.skills__item {
+  width: 100%;
+  min-height: 56px;
+  padding-left: 30px;
+
+  @media @tablet {
+    width: 40%;
+  }
 }
